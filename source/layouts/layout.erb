@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">   
+    <title><%= current_page.data.title || "Rephael Wenger" %></title>
+    <%= stylesheet_link_tag "normalize", "all" %>
+  </head>
+  
+  <body class="<%= page_classes %>">
+
+    <!-- Container -->
+    <div id="container">
+
+      <!-- Logo -->
+      <div id = "logo">
+        <a href="index.html">Rephael Wenger</a>
+      </div>
+      <!-- End Logo -->
+
+      <!-- Navigation -->
+      <%= partial "layouts/_navigation.erb" %>
+      <!-- End Navigation -->
+
+      <hr>
+
+      <!-- Content -->
+      <%= yield %>
+      <!-- End Content -->
+
+      <!-- Footer -->
+      <%= partial "layouts/_footer.erb" %>
+      <!-- End Footer-->
+
+    </div>
+    <!-- End Container -->
+
+  </body>
+</html>

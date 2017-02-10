@@ -1,0 +1,267 @@
+---
+title: Rephael Wenger Publications
+---
+
+      <div>
+      <%= image_tag 'isosurface_book_cover.gif', :width => '300', :height => '370', :class => "indexImage", :alt => 'Isosurfaces'%>
+      <h1>Isosurfaces: Geometry, Topology, and Algorithms</h1>
+      R. Wenger.&nbsp; 
+      A.K. Peters/CRC Press, 2013.<br/>
+      "Isosurfaces: Geometry, Topology, and Algorithms" is the book I wrote
+      on isosurfaces.&nbsp; Topics include the Marching Cubes algorithm and
+      variants, dual contouring algorithms, multilinear interpolation,
+      multiresolution isosurface extraction, isosurfaces in four dimensions,
+      interval volumes, and contour trees. The book also describes data
+      structures for faster isosurface extraction as well as methods for
+      selecting significant isovalues.<br/><br/>
+      For more information, including the table of contents, see:<br/>
+      <a href="http://www.crcpress.com/product/isbn/9781466570979">
+      http://www.crcpress.com/product/isbn/9781466570979</a><br/><br/>
+      <a href="../publications/isosurface_book_preview.pdf">Chapter 2, Sections 1-3</a>: A sample preview of the text.
+      </div>
+
+      <br/><br/><br/><hr class="clear">
+
+      <div>
+      <h1>Journal and Conference Articles</h1>
+      <table class="publications">
+        <tr>
+          <td>
+            <%= image_tag 'sharp_weld.gif', :width => '350', :height => '292', :class => 'pubImage', :alt => 'Constructing Isosurfaces'%>
+          </td>
+          <td>
+            <h2>Constructing Isosurfaces with Sharp Edges and Corners using Cube Merging</h2>
+            A, Bhattacharya and R. Wenger. 
+            &nbsp; Computer Graphics Forum, 32, 2013, 11-20.<br/>
+            A number of papers present algorithms to construct isosurfaces with
+            sharp edges and corners from hermite data, i.e. the exact surface
+            normals at the exact intersection of the surface and grid edges. 
+            We discuss some fundamental problems
+            with the previous algorithms and describe a new approach, based on
+            merging grid cubes near sharp edges, that produces significantly better
+            results. Our algorithm requires only gradients at the grid vertices,
+            not at each surface-edge intersection point. We also give a method for
+            measuring the correctness of the resulting sharp edges and corners in
+            the isosurface.<br/><br/>
+            <a href="ftp://ftp.cse.ohio-state.edu/pub/tech-report/2013/TR05.pdf">Related tech report (pdf format)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= image_tag 'Tooth.box_dim.gif', :width => '360', :height => '252', :class => 'pubImage', :alt => 'Franctal Dimensions of Isosurfaces'%>
+          </td>
+          <td>
+            <h2>On the Fractal Dimension of Isosurfaces</h2>
+            M. Khoury and R. Wenger. 
+            IEEE Transactions on Visualization and Computer Graphics, 16, 2010, 1198-1205.<br/>
+            The fractal dimension of an isosurface represents the growth in the isosurface as
+            the number of grid cubes increases. We define and discuss the fractal isosurface
+            dimension, present statistics on the average fractal dimension of 60
+            publicly available benchmark data sets, show the fractal dimension is
+            highly correlated with topological noise in the benchmark data sets,
+            and present a formula predicting the fractal dimension as a function of
+            noise.<br/><br/>
+            <a href="../papers/fractal.pdf">Paper(pdf format)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= image_tag 'Reeb_example.small.gif', :width => '350', :height => '151', :class => 'pubImage', :alt => 'Reeb Graphs'%>
+          </td>
+          <td>
+            <h2>A Randomized O(m log m) Time Algorithm for Computing Reeb Graphs of Arbitrary Simplicial Complexes</h2>
+            W. Harvey, Y. Wang. and R. Wenger. Proc. of the ACM Symposium on Computational Geometry (SOCG) 2010.<br/>
+            We present the first
+            sub-quadratic algorithm to compute the Reeb graph for a function on an
+            arbitrary simplicial complex K. Our algorithm is randomized with
+            an expected running time O(m log n) where m is the size of the
+            2-skeleton of K and n is the number of vertices. Our algorithm is
+            very simple to implement.<br/><br/>
+            <a href="../papers/Reeb_graph.pdf">Paper(pdf format)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= image_tag 'mobius.jpg', :width => '205', :height => '194', :class => 'pubImage', :alt => 'Mobius'%>
+          </td>
+          <td>
+            <h2>Reconstruction of Surfaces with Boundaries</h2>
+            T. K. Dey, K. Li., E. A. Ramos, and R. Wenger. Proc.
+            Sympos. Geom. Processing., 
+            special issue of Computer Graphics Forum, Vol. 28, No. 5 (2009), 1371-1382.<br/>
+            [<a href="http://www.cse.ohio-state.edu/%7Etamaldey/isotopic.html">Web-page</a>]<br/>
+            [<a href="http://www.cse.ohio-state.edu/%7Etamaldey/Peel.html">Software</a>]<br/>
+            We present an algorithm for 
+            the   reconstruction      of a surface with boundaries (including a non-orientable 
+            one) in three   dimensions   from a sufficiently dense sample. It is guaranteed 
+            that the  output is isotopic   to the unknown sampled surface. No previously 
+            known algorithm guarantees  isotopic or homeomorphic reconstruction of surfaces
+            with boundaries. Our algorithm is surprisingly simple. It `peels' slivers
+            greedily from an alpha-complex   of a sample of the surface. No other post-processing
+            is necessary. We provide   several experimental results from an implementation
+            of our basic algorithm   and also a modified version of it.<br/><br/>
+            <a href="../papers/boundary.pdf">Paper (pdf format)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= image_tag 'fuel_snap_03.gif', :width => '301', :height => '251', :class => 'pubImage', :alt => 'Fuel Snap'%>
+          </td>
+          <td>
+            <h2>Quality Isosurface Mesh Generation Using an Extended Marching Cubes Lookup Table</h2>
+            Sundaresan Raman and Rephael Wenger.<br/>
+            Computer Graphics Forum, 27, 2008, 791-798.<br/>
+            The Marching Cubes Algorithm may return degenerate, zero area isosurface
+            triangles, and often returns isosurface triangles with small areas,
+            edges or angles. We show how to avoid both problems using an extended
+            Marching Cubes lookup table. As opposed to the conventional Marching
+            Cubes lookup table, the extended lookup table differentiates scalar
+            values equal to the isovalue from scalar values greater than the
+            isovalue. The lookup table has 8  =
+            6561 entries, based on three possible labels, '-' or '=' or '+',
+            of each cube vertex. We present an algorithm based on this lookup table
+            which returns an isosurface close to the Marching Cubes isosurface, but
+            without any degenerate triangles or any small areas, edges or angles.<br/><br/>
+            <a href="../publications/isomesh.pdf">Paper (pdf format)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= image_tag 'isosurfaceD.gif', :width => '300', :height => '300', :class => 'pubImage', :alt => 'Isosurface'%>
+          </td>
+          <td>
+            <h2>Isosurface Construction in Any Dimension Using Convex Hulls</h2>
+            Praveen Bhaniramka, Rephael Wenger and Roger Crawfis<br/>
+            IEEE Trans. on Visualization and Computer Graphics, 10, 2004, 353-400.<br/><br/>
+            <strong>Abstract:</strong> We present an algorithm for constructing isosurfaces in
+            any dimension. The input to the algorithm is a set of scalar values in a 
+            <i style="">d</i>-dimensional regular grid of
+            (topological) hypercubes. The output is a set of (<i style="">d-</i>1)-dimensional
+            simplices forming a piecewise linear approximation
+            to the isosurface. The algorithm
+            constructs the isosurface piecewise within each hypercube in the grid using the
+            convex hull of an appropriate set of points. We prove that our algorithm correctly 
+            produces a triangulation of a (<i style="">d-</i>1)-manifold with boundary. In
+            dimensions three and four, lookup tables with 2<sup>8</sup> and 2<sup>16</sup>
+            entries, respectively, can be used to speed the algorithm&#8217;s running time. In
+            three dimensions this gives the popular Marching Cubes algorithm.
+            We discuss applications of four dimensional
+            isosurface construction to time varying isosurfaces, interval volumes and morphing.<br/><br/>
+            <a href="../publications/isosurfaceD.pdf">Paper (pdf format)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= image_tag 'persist.gif', :width => '261', :height => '277', :class => 'pubImage', :alt => 'Persist'%>
+          </td>
+          <td>
+            <h2>Stability of Critical Points with Interval Persistence</h2>
+            Tamal K. Dey and Rephael Wenger<br/>
+            Discrete and Computational Geometry, 38, 2007, 479-512.<br/><br/>
+            <strong>Abstract:</strong> Scalar functions defined on a topological space 
+            <span style="font-family: Symbol;">W</span>
+            are at the core of many applications such as shape matching,
+            visualization and physical simulations. Topological persistence is an
+            approach to characterizing these functions. It measures how long
+            topological structures in the sub-level sets {x&nbsp;in W: f(x) &lt;=
+            c} persist as&nbsp;c changes. Recently it was shown that
+            the&nbsp;critical values defining a topological structure with
+            relatively large persistence remain almost unaffected by small
+            perturbations. &nbsp;This result suggests that topological persistence
+            is a good measure for matching and comparing scalar functions. We
+            extend these results to&nbsp;critical points in the domain by
+            redefining persistence and critical points and replacing&nbsp;sub-level
+            sets {x in W: f(x) &lt;= c} with&nbsp;interval sets&nbsp;{x&nbsp;in W:
+            a &lt;= f(x) &lt; b}. With these modifications we establish a stability
+            result for critical points. This result is strengthened for maxima that
+            can be used for matching two scalar functions.<br/><br/>
+            <a href="../publications/persist.pdf">Paper (pdf format)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= image_tag 'contour.gif', :width => '300', :height => '211', :class => 'pubImage', :alt => 'Contour'%>
+          </td>
+          <td>
+            <h2>Contour Area Filtering of 2-Dimensional Electrophoresis Images</h2>
+            Ramakrishnan-Kazhiyur-Mannar, Dominic J Smiraglia, Christoph Plass and Rephael Wenger<br/>
+            Medical Image Analysis, 10, 2006, 353-365.<br/><br/>
+            <strong>Abstract:</strong> We describe an algorithm, Contour Area Filtering, for separating
+            background from foreground in gray scale images. The algorithm is based on the area contained
+            within gray scale contour lines. It can
+            be viewed as a form of local thresholding, or as a seed growing algorithm, or
+            as a type of watershed segmentation. The
+            most important feature of the algorithm is that it uses object area to
+            determine the segmentation. Thus it is
+            relatively impervious to brightness and contrast variations across an image or
+            between different images.<br/><br/>
+            Contour Area Filtering was designed specifically for image
+            analysis of 2D electrophoresis gels, although it can be applied to other gray
+            scale images...<br/><br/>
+            <a href="../publications/contour.pdf">Paper (pdf format)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= image_tag 'vrlgs.gif', :width => '300', :height => '379', :class => 'pubImage', :alt => 'RLGS'%>
+          </td>
+          <td>
+            <h2>Restriction Landmark Genomic Scanning (RLGS) spot
+            identification by second generation virtual RLGS in multiple genomes
+            with multiple enzyme combinations</h2>
+            Authors: Dominic Smiraglia, Ramakrishnan
+            Kazhiyur-Mannar, Christopher Oakes, Yue-Zhong Wu, Ping Liang, Tahmina
+            Ansari, Jian Su, Laura Rush, Laura Smith, Li Yu, Chunhui Liu, Zunyan
+            Dai, Shih-Shih Chen, Shu-Huei Wang, Joseph Costello, Ilya Ioshikhes,
+            David Dawson, Jason Hong, Michael Teitell, Angela Szafranek, Marta
+            Camoriano, Fei Song, Rosemary Elliott, William Held, Jacquetta Trasler,
+            Christoph Plass and Rephael Wenger<br/><br/>
+            BMC Genomics, 8:446, November 2007<br/>
+            <strong>Abstract</strong>: ... We report the development of a virtual RLGS method (vRLGS)
+            that allows for RLGS spot identification in any sequenced genome and with any
+            enzyme combination. We report
+            significant improvements in predicting DNA fragment migration patterns by
+            incorporating sequence information into the migration models, and demonstrate a
+            median Euclidian distance between actual and predicted spot migration of 0.18
+            centimeters for the most complex human RLGS pattern. We report the confirmed
+            identification of 795 human and 530 mouse RLGS spots for the most commonly used
+            enzyme combinations. We also developed a
+            method to filter the virtual spots to reduce the number of extra spots seen on
+            a virtual profile for both the mouse and human genomes. We demonstrate use of this filter to simplify
+            spot cloning and to assist in the identification of spots exhibiting
+            tissue-specific methylation...<br/><br/>
+            <a href="../publications/vrlgs-BMC.pdf">Paper (pdf format)</a>
+          </td>
+        </tr>
+      </table>
+      </div>
+
+      <div>
+      <hr>
+      <h1>Other papers (selected):</h1>
+      <div>T.K. Dey and R. Wenger, <a href="../papers/sharp2d_fast.pdf">"Fast
+      Reconstruction of curves with sharp corners,"</a> Int. J. of Comp.
+      Geom. and Applications, 12 2002, pp. 353-400.</div>
+
+      <div>J. Pach and R. Wenger, <a href="../papers/plembed.pdf">"Embedding
+      planar graphs at fixed vertex locations,"</a> Graphs and Combinatorics,
+      17 2001, pp. 717-728.</div>
+
+      <div>P. Bhaniramka, R. Wenger and R. Crawfis, <a href="../papers/isosurface.pdf">"Isosurfacing
+      in higher dimensions"</a>, Visualization 2000, Salt Lake City, Utah:IEEE
+      Computer Society Press.</div>
+
+      <div>T. Dey and R. Wenger, <a href="../publications/sharp.pdf">"Reconstructing
+      curves
+      with sharp corners"</a>, ACM Symp. on Computational Geometry, 2000.</div>
+
+      <div>R. Wenger, <a href="../publications/gtt.pdf">"Progress in geometric
+      transversal
+      theory"</a>,
+      Contemporary Mathematics, B. Chazelle and J.E. Goodman, Eds., American
+      Math Society, 1999, pp. 375-393.</div>
+
+      <div>H. Gupta and R. Wenger, <a href="../publications/plhom.pdf">"Constructing
+      piecewise linear homeomorphisms of simple polygons"</a>, <i>J.
+      Algorithms, </i>22, 1997, pp. 142-157.</div>
+      </div>
